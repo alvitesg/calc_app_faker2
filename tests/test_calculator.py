@@ -16,3 +16,4 @@ def test_divide():
 def test_multiply():
     '''Test that multiply function works '''    
     assert Calculator.multiply(2,2) == 4
+    

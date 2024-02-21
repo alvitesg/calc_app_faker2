@@ -12,7 +12,7 @@ as well as the functionality of the Calculation class that encapsulates these op
 # Import pytest for writing test cases.
 # Import the Calculation class from the calculator package to test its functionality.
 # Import the arithmetic operation functions (add, subtract, multiply, divide) to be tested.
-# pylint: disable=unnecessary-dunder-call, invalid-name
+# pylint: disable=unused-import, invalid-name, unnecessary-dunder-call
 from decimal import Decimal
 import pytest
 from calculator.calculation import Calculation

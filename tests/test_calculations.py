@@ -78,3 +78,4 @@ def test_get_latest_with_empty_history():
     Calculations.clear_history()
     # Assert that the latest calculation is None since the history is empty.
     assert Calculations.get_latest() is None, "Expected None for latest calculation with empty history"
+    

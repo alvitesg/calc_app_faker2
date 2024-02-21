@@ -1,6 +1,8 @@
+"""conftest file is used to configure the tests using faker data"""
 # conftest.py
-import pytest
+# pylint: disable=trailing-whitespace, missing-function-docstring, comparison-with-callable, unused-import
 from decimal import Decimal
+import pytest
 from faker import Faker
 from calculator.operations import add, subtract, multiply, divide
 
@@ -20,7 +22,6 @@ def generate_test_data(num_records):
         b = Decimal(fake.random_number(digits=2)) if _ % 4 != 3 else Decimal(fake.random_number(digits=1))
         operation_name = fake.random_element(elements=list(operation_mappings.keys()))
         operation_func = operation_mappings[operation_name]
-        
         # Ensure b is not zero for divide operation to prevent division by zero in expected calculation
         if operation_func == divide:
             b = Decimal('1') if b == Decimal('0') else b

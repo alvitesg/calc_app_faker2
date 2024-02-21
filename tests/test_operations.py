@@ -1,3 +1,5 @@
+""" unit tests for operations calculator file"""
+# pylint: disable=invalid-name, wrong-import-order, unused-import
 import pytest
 from decimal import Decimal
 from calculator.calculation import Calculation

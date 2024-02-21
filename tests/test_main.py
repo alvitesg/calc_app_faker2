@@ -1,3 +1,5 @@
+"""test to be performed on main.py file"""
+# pylint: disable=missing-function-docstring
 import pytest
 from main import calculate_and_print  # Ensure this import matches your project structure
 
@@ -16,3 +18,7 @@ def test_calculate_and_print(a_string, b_string, operation_string,expected_strin
     calculate_and_print(a_string, b_string, operation_string)
     captured = capsys.readouterr()
     assert captured.out.strip() == expected_string
+
+if __name__ == '__main__':
+    pytest.main()
+    
