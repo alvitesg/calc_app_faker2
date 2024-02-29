@@ -2,8 +2,8 @@
 # pylint: disable=invalid-name, wrong-import-order, unused-import
 import pytest
 from decimal import Decimal
-from calculator.calculation import Calculation
-from calculator.operations import add, subtract, multiply, divide
+from app.calculation import Calculation
+from app.operations import add, subtract, multiply, divide
 
 
 def test_operation(a, b, operation, expected):
